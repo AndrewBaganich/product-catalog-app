@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
-import "./HomePage.css";
+import "./homePage.css";
+import StatusMessage from "../../components/StatusMessage/statusMessage";
 
 function HomePage() {
-  const { products, loading } = useProducts();
-
-  const categories = Array.from(
-    new Set(products.map((product) => product.category))
-  );
-
-  if (loading) {
-    return <p className="status-message">Loading categories...</p>;
-  }
+    const { products, loading } = useProducts();
+    
+    const categories = Array.from(
+        new Set(products.map((product) => product.category))
+    );
+    
+    if (loading) {
+        return <StatusMessage message="Loading products..." />;
+    }
 
   return (
     <section className="home-page">

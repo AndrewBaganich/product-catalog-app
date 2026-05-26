@@ -1,4 +1,4 @@
-import "./StatusMessage.css";
+import "./statusMessage.css";
 
 type StatusMessageProps = {
   message: string;
