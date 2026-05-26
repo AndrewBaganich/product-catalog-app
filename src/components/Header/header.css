@@ -1,0 +1,99 @@
+
+.header {
+    width: 100%;
+    background: rgb(247, 247, 247);
+    border-bottom: 1px solid #cecece;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 16px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-image {
+    height: 90px;
+    width: auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    position: relative;
+    margin-right:50px;
+}
+
+.search-input {
+    width: 240px;
+    padding: 10px 14px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.search-input:focus {
+    border-color: #111;
+}
+
+.header-button {
+    padding: 10px 14px;
+    text-decoration:none;
+    color:#000;
+
+    font-size:14px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+
+    background: white;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.header-button:hover {
+    background: #111;
+    color: white;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}

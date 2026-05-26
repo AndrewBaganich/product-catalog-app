@@ -1,0 +1,78 @@
+.compare-page {
+    padding: 40px;
+}
+
+.compare-title {
+    margin-bottom: 28px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #111;
+}
+
+.compare-table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 22px;
+    border: 1px solid #ececec;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.compare-table th,
+.compare-table td {
+    padding: 18px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    vertical-align: middle;
+}
+
+.compare-table th {
+    background: #fafafa;
+    font-weight: 700;
+}
+
+.compare-table th:first-child,
+.compare-table td:first-child {
+    text-align: left;
+    min-width: 180px;
+}
+
+.compare-table th:last-child,
+.compare-table td:last-child {
+    border-right: none;
+}
+
+.remove-compare-button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 12px;
+
+    background: #111;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.remove-compare-button:hover {
+    opacity: 0.9;
+}
+
+.compare-product-image {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+
+    display: block;
+    margin: 0 auto;
+}
